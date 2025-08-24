@@ -72,4 +72,13 @@ public class Adressbuch {
         }
     }
 
+    public void findeName(String name){
+        for (Kontakt kontakt : kontaktListe) {
+            if (kontakt.getName().equals(name)) {
+                System.out.println("Name gefunden." + kontakt.getName() +", Email lautet: "+ kontakt.getEmail() + ", Tel. lautet: " + kontakt.getTelefonnummer());
+                return;
+            }
+        } 
+        System.out.println("Name im Adressbuch nicht vorhanden.");
+    }
 }

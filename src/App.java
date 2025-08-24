@@ -13,8 +13,9 @@ public class App {
             System.out.println("\n--- Adressbuch Menu ---");
             System.out.println("1. Alle Kontakte anzeigen");
             System.out.println("2. Neuen Kontakt hinzufügen");
-            System.out.println("3. Beenden");
-            System.out.print("Wahl:");
+            System.out.println("3. Finde Name in Adressbuch");
+            System.out.println("4. Beenden");
+            System.out.print("Wahl: ");
 
             int wahl = scanner.nextInt();
             scanner.nextLine(); //Eingabezeile leeren
@@ -36,7 +37,12 @@ public class App {
                     adressbuch.kontakteSpeichern("liste.txt");
                     System.out.println("Kontakt gespeichert.");
                     break;
-                case 3: 
+                case 3:
+                    System.out.print("Finde Name in Adressbuch: ");
+                    String name1 = scanner.nextLine();
+                    adressbuch.findeName(name1);
+                    break;
+                case 4: 
                     weiter = false;
                     System.out.println("Programm beendet.");
                     break;
