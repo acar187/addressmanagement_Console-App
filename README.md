@@ -1,4 +1,4 @@
-## Getting Started (pull)
+## Getting Started 
 
 Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
 
@@ -21,5 +21,6 @@ The `JAVA PROJECTS` view allows you to manage your dependencies. More details ca
 
 
 In order to tun run the app, go to src folder and execute in your terminal App.java 
+
 
 
